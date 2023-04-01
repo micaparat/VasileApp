@@ -1,5 +1,5 @@
 let strings = [
-  "Dar ce",
+  "Dar ce sa",
   "Ce sa gatesc azi la aia micii?",
   "Am tot facut ciorba de leustean, nu stiu ce sa gatesc azi.",
   "Dar daca ne invadeaza rusi, eu ce le pun pe masa?",
