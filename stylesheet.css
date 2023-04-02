@@ -1,79 +1,162 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin-top: 2rem;
-    border: 0px;
-    color: #fff;
-    border-radius: 1rem;
-    align-self: center;
-    padding: 0.75rem;
-    background: #297044;
-    cursor: pointer;
-  }
-  
-  button:disabled {
-      background-color: #cdcdcd;
-      color: dimgrey;
-      opacity: 1;
-  }
-  
-  button:focus {
-    outline: 2px solid #12b041;
-  }
-  
-  .fake-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    font-family: 'Segoe UI', sans-serif;
-    border: 1px solid #bcc6d6;
-    border-radius: 1rem;
-    padding: 0.5rem;
-  
-  }
-  
-  .fake-input:focus {
-    outline: 2px solid #3b8658;
-  }
-  
-  .chat-window {
-    display: flex;
-    flex-direction: column;
-    min-height: 2rem;
-    border: 1px solid #bcc6d6;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .chat-bubble {
-    padding: 0.3rem 1rem;
-    border-radius: 1rem;
-    margin-top: 0.5rem;
-  }
-  
-  .blue {
-    align-self: flex-start;
-    background: #ecf0ed;
-    color: #000000;
-  }
 
-  .gray {
-    align-self: flex-start;
-    background: #8ba896;
-    color: #000;
-  }
-  
-  .fake-gpt {
-    max-width: 30rem;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
+body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.25rem;
+}
+
+
+
+#submit-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* position: absolute;
+  right: 1rem; */
+  margin: 1rem auto auto auto;
+  border: 0px;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 0.75rem;
+  background: #297044;
+  cursor: pointer;
+}
+
+#submit-button:disabled {
+  background-color: #cdcdcd;
+  color: dimgrey;
+  opacity: 1;
+}
+
+#submit-button:focus {
+  outline: 2px solid #12b041;
+}
+
+.fake-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  border: 1px solid #bcc6d6;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  padding-right: 30%;
+
+}
+
+.fake-input:focus {
+  outline: 2px solid #3b8658;
+}
+
+.input-field-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  background-color: #c0ba60;
+  min-height: 2rem;
+  padding: 0.5rem;
+  padding-bottom: 2rem;
+  gap: 1rem;
+  /* margin-bottom: 2rem; */
+}
+
+.chat-bubble {
+  resize: none;
+  position: relative;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  /* margin-top: 0.5rem; */
+  width: 65%;
+  overflow-wrap: break-word;
+}
+
+.left {
+  align-self: flex-start;
+  background: #ecf0ed;
+  /* border-bottom-left-radius: 0; */
+  color: #000000;
+}
+
+.right {
+  margin: 0 0 0 auto;
+  align-self: flex-end;
+  /* text-align: end; */
+  /* border-bottom-right-radius: 0; */
+  background: #ecf0ed;
+  color: #000;
+}
+
+.tri-right.btm-right:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 1.5rem;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: #ecf0ed #ecf0ed transparent transparent;
+}
+
+.tri-right.btm-left:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 1.5rem;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: #ecf0ed transparent transparent #ecf0ed;
+}
+
+.main-container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #cfe9d8;
+}
+
+.app-wrapper {
+display: flex;
+flex-direction: column;
+}
+
+.characters-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.right-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.drawing {
+  margin-top: 1rem;
+  max-width: 50%;
+}
+.drawing-right {
+  margin-top: 1rem;
+  max-width: 100%;
+}
+
+.thinking {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+
+}
