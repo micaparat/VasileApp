@@ -129,7 +129,6 @@ function typeQuestion(callback) {
   else {
     promptIndex = 0;
   }
-  console.log(promptIndex);
 }
 
 function typeAnswer(callback) {
@@ -144,7 +143,6 @@ function typeAnswer(callback) {
   else {
     answIndex = 0;
   }
-  console.log(answIndex);
 }
 
 function typeWriter(currentStrArray, index, currentDiv, callback) {
