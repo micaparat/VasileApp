@@ -3,14 +3,14 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Array Input</title>
+  <title>checGPT</title>
   <link rel="stylesheet" href="stylesheet.css">
 
 </head>
 
 <body>
 
-  <div id="iframe-container" class="main-container">
+  <div id="main-container" class="main-container">
     <div class="app-wrapper">
 
       <div id="chat-window" class="chat-window"></div>
@@ -39,23 +39,5 @@
 </body>
 
 <script src="script-nochat.js"></script>
-<script>
-// Get a reference to the parent window
-var parentWindow = window.parent;
-
-// Listen for changes in the height and width of the content
-window.addEventListener('resize', function () {
-  var contentHeight = document.body.scrollHeight;
-  var contentWidth = document.body.scrollWidth;
-
-  // Send a message to the parent window with the new height and width
-  parentWindow.postMessage({
-    height: contentHeight,
-    width: contentWidth
-  }, '*');
-});
-</script>
-
-
 
 </html>
