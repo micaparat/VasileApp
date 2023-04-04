@@ -101,19 +101,33 @@ const answerDelay = Math.floor(Math.random() * 3000); // characterDelay in milli
 let divID = 0;
 
 // get a reference to the iframe element
-var iframe = document.getElementById('iframe-container');
+var iframe = document.getElementById('iFrame1');
 
-// listen for changes in the height and width of the content
-iframe.addEventListener('load', function() {
-  var contentHeight = iframe.contentWindow.document.body.scrollHeight;
-  var contentWidth = iframe.contentWindow.document.body.scrollWidth;
+// listen for changes in the size of the div element
+var observedDiv = iframe.contentWindow.document.getElementById('iframe-container');
+var observer = new MutationObserver(function(mutations) {
+  mutations.forEach(function(mutation) {
+    if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+      var contentHeight = observedDiv.scrollHeight;
+      var contentWidth = observedDiv.scrollWidth;
 
-  // send a message to the parent page with the new height and width
-  window.parent.postMessage({
-    height: contentHeight,
-    width: contentWidth
-  }, '*');
+      // send a message to the parent page with the new height and width
+      window.parent.postMessage({
+        height: contentHeight,
+        width: contentWidth
+      }, '*');
+    }
+  });
 });
+observer.observe(observedDiv, { attributes: true });
+
+// send the initial height to the parent page
+var contentHeight = observedDiv.scrollHeight;
+var contentWidth = observedDiv.scrollWidth;
+window.parent.postMessage({
+  height: contentHeight,
+  width: contentWidth
+}, '*');
 
 function resetRenderPrompt() {
   // reset input field and chat window
