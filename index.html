@@ -39,5 +39,34 @@
 </body>
 
 <script src="script-nochat.js"></script>
+<script>
+// get a reference to the iframe element
+var iframe = document.getElementById('iFrame1');
+
+// log some debug information
+console.log('Iframe element:', iframe);
+
+// listen for changes in the height and width of the content
+iframe.addEventListener('load', function() {
+  var contentHeight = iframe.contentWindow.document.body.scrollHeight;
+  var contentWidth = iframe.contentWindow.document.body.scrollWidth;
+
+  // log some debug information
+  console.log('Content height:', contentHeight);
+  console.log('Content width:', contentWidth);
+
+  // send a message to the parent page with the new height and width
+  window.parent.postMessage({
+    height: contentHeight,
+    width: contentWidth
+  }, '*');
+
+  // log some debug information
+  console.log('Sent message to parent page');
+});
+
+</script>
+
+
 
 </html>
