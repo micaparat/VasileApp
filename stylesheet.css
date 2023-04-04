@@ -1,10 +1,20 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+
 body {
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 1.25rem;
+  font-family: 'Patrick Hand', sans-serif;
+  font-size: 2rem;
+  --mainColor: #dddbd5;
 }
 
-
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
 
 #submit-button {
   -webkit-appearance: none;
@@ -16,9 +26,10 @@ body {
   border: 0px;
   color: #fff;
   border-radius: 1rem;
-  padding: 0.75rem;
-  background: #297044;
+  padding: 1rem 2rem;
+  background: #e02a25;
   cursor: pointer;
+  font-weight: 700;
 }
 
 #submit-button:disabled {
@@ -31,23 +42,6 @@ body {
   outline: 2px solid #12b041;
 }
 
-.fake-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 100%;
-  font-family: 'Segoe UI', sans-serif;
-  border: 1px solid #bcc6d6;
-  border-radius: 1rem;
-  padding: 0.5rem;
-  padding-right: 30%;
-
-}
-
-.fake-input:focus {
-  outline: 2px solid #3b8658;
-}
-
 .input-field-wrapper {
   position: relative;
   display: flex;
@@ -55,10 +49,10 @@ body {
   align-items: center;
 }
 
-.chat-window {
+.chat-window {  
   display: flex;
   flex-direction: column;
-  background-color: #c0ba60;
+  /* background-color: #c0ba60; */
   min-height: 2rem;
   padding: 0.5rem;
   padding-bottom: 2rem;
@@ -69,8 +63,9 @@ body {
 .chat-bubble {
   resize: none;
   position: relative;
-  padding: 0.3rem 1rem;
+  padding: .8rem 1rem;
   border-radius: 1rem;
+  background: var(--mainColor);
   /* margin-top: 0.5rem; */
   width: 65%;
   overflow-wrap: break-word;
@@ -78,7 +73,7 @@ body {
 
 .left {
   align-self: flex-start;
-  background: #ecf0ed;
+  /* background: #dad7ae; */
   /* border-bottom-left-radius: 0; */
   color: #000000;
 }
@@ -88,7 +83,7 @@ body {
   align-self: flex-end;
   /* text-align: end; */
   /* border-bottom-right-radius: 0; */
-  background: #ecf0ed;
+  /* background: #dad7ae; */
   color: #000;
 }
 
@@ -98,10 +93,10 @@ body {
 	width: 0;
 	height: 0;
   left: auto;
-	right: 1.5rem;
+	right: 3.5rem;
 	bottom: -20px;
 	border: 12px solid;
-	border-color: #ecf0ed #ecf0ed transparent transparent;
+	border-color: var(--mainColor) var(--mainColor) transparent transparent;
 }
 
 .tri-right.btm-left:after{
@@ -109,26 +104,30 @@ body {
 	position: absolute;
 	width: 0;
 	height: 0;
-	left: 1.5rem;
+	left: 3.5rem;
   right: auto;
   top: auto;
 	bottom: -20px;
 	border: 12px solid;
-	border-color: #ecf0ed transparent transparent #ecf0ed;
+	border-color: var(--mainColor) transparent transparent var(--mainColor);
 }
 
 .main-container {
-  max-width: 600px;
-  display: flex;
+  width: 600px;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  background-color: #cfe9d8;
+  justify-content: center; */
+  /* padding: 1rem; */
+  /* background-color: #cfe9d8; */
 }
 
 .app-wrapper {
 display: flex;
 flex-direction: column;
+/* align-content: center; */
+width: 100%;
+border: solid 4px #000;
 }
 
 .characters-wrapper {
@@ -136,12 +135,12 @@ flex-direction: column;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: start;
+  align-items: space-between;
 }
 
 .right-wrapper {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .drawing {
@@ -154,9 +153,16 @@ flex-direction: column;
 }
 
 .thinking {
+  max-width: 32px;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 10%;
+  left: 10%;
   transform: translate3d(-50%, -50%, 0);
 
 }
+
+.hourglass {
+  width: 64px;
+  height: 64px;
+}
+

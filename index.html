@@ -9,60 +9,35 @@
 </head>
 
 <body>
-  <!-- 
-
-
-  <div id="fake-gpt-window" class="fake-gpt">
-    <div id="chat-window" class="chat-window">asdfasdfasdfasdfasdfasdfasdf</div>
-
-    <div class="input-field-wrapper">
-
-      <textarea rows="2" cols="3" class="fake-input" id="input-field" readonly>adsfasdfasdfasdfasdfasdfasdfasdfasdfa</textarea>
-      <button id="submit-button" onclick="resetRenderPrompt()">Lămurește-mă</button>
-
-    </div>
-
-  </div>
-  <script src="script-nochat.js"></script> -->
 
   <div class="main-container">
     <div class="app-wrapper">
-      <div id="chat-window" class="chat-window">
-        <div class="chat-bubble right tri-right btm-right">Praesent pellentesque, leo in condimentum aliquam, urna ex varius tellus, ut
-          auctor quam nisl et lectus. Phasellus facilisis id nulla sed dignissim. Donec interdum eros libero, at varius
-          mi consectetur eu.</div>
-        <div class="chat-bubble left tri-right btm-left">Fusce lobortis, arcu quis euismod condimentum, elit ligula blandit enim, vitae
-          interdum mi ligula in ex. Integer fermentum ullamcorper justo non imperdiet.</div>
-      </div>
+
+      <div id="chat-window" class="chat-window"></div>
 
       <div class="characters-wrapper">
+
         <img class="drawing" src="assets/kids_outline_girl.svg" alt="">
         <div class="right-wrapper">
           <img class="drawing-right" src="assets/kids_outline_dog.svg" alt="">
-          <div class="thinking" id="thinking">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_FmxpKF.json"  background="transparent"  speed="1"  style="width: 45; height: 45;"  loop  autoplay></lottie-player>
-            </div>
+          <div class="thinking" id="thinking">            
+            <img class="hourglass" src="assets/hourglass.gif" alt="">
           </div>
         </div>
-
-
       </div>
 
-      <button id="submit-button" onclick="resetRenderPrompt()">APASA-MA</button>
+    </div>
 
+    <div class="button-wrapper">
+      <button id="submit-button" onclick="resetRenderPrompt()">APASĂ-MĂ!</button>
     </div>
 
   </div>
 
-
-
-
-
-
-
+  </div>
 
 </body>
+
 <script src="script-nochat.js"></script>
 
 </html>
