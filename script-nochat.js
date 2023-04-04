@@ -21,7 +21,7 @@ let prompts = [
   "Comandantul Zorp mi-a dat ordin să mă infiltrez printre pămînteni. Ce să gătesc azi?",
   "M-am săturat să îmbogăţesc farmacia. Ce pot să gătesc care nu dă nici diaree, nici constipaţie?",
   "Am câştigat un milion la păcănele. Cu ce pot să-mi răsfăţ familia?"
-  
+
 
 ]; // array of prompts to display
 
@@ -72,7 +72,7 @@ let answers = [
   "Să îl întrebăm mai bine pe Nistor McDristor, şaormarul prietenos",
   "Ceau, fă şi tu ceva care să alunece aşa, păstă medie",
   "Maioneză cu untură. Mai târziu, când mănânci doar maioneză, corpului tău o să i se pară de regim"
-  
+
 
 ]; // array of answers to display
 
@@ -100,35 +100,6 @@ const answerDelay = Math.floor(Math.random() * 3000); // characterDelay in milli
 
 let divID = 0;
 
-// get a reference to the iframe element
-var iframe = document.getElementById('iFrame1');
-
-// listen for changes in the size of the div element
-var observedDiv = iframe.contentWindow.document.getElementById('iframe-container');
-var observer = new MutationObserver(function(mutations) {
-  mutations.forEach(function(mutation) {
-    if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
-      var contentHeight = observedDiv.scrollHeight;
-      var contentWidth = observedDiv.scrollWidth;
-
-      // send a message to the parent page with the new height and width
-      window.parent.postMessage({
-        height: contentHeight,
-        width: contentWidth
-      }, '*');
-    }
-  });
-});
-observer.observe(observedDiv, { attributes: true });
-
-// send the initial height to the parent page
-var contentHeight = observedDiv.scrollHeight;
-var contentWidth = observedDiv.scrollWidth;
-window.parent.postMessage({
-  height: contentHeight,
-  width: contentWidth
-}, '*');
-
 function resetRenderPrompt() {
   // reset input field and chat window
   chatWindow.innerHTML = "";
@@ -140,7 +111,7 @@ function resetRenderPrompt() {
       thinkingSPinner.style.display = "none";
       typeAnswer(() => {
         submitButton.disabled = false;
-        
+
       });
     }, Math.floor(Math.random() * 3000)); // wait for X milliseconds between the two functions
   });
