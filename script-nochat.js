@@ -100,6 +100,21 @@ const answerDelay = Math.floor(Math.random() * 3000); // characterDelay in milli
 
 let divID = 0;
 
+// get a reference to the iframe element
+var iframe = document.getElementById('iframe-container');
+
+// listen for changes in the height and width of the content
+iframe.addEventListener('load', function() {
+  var contentHeight = iframe.contentWindow.document.body.scrollHeight;
+  var contentWidth = iframe.contentWindow.document.body.scrollWidth;
+
+  // send a message to the parent page with the new height and width
+  window.parent.postMessage({
+    height: contentHeight,
+    width: contentWidth
+  }, '*');
+});
+
 function resetRenderPrompt() {
   // reset input field and chat window
   chatWindow.innerHTML = "";
