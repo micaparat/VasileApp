@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
-
-
 body {
   font-family: 'Patrick Hand', sans-serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
+  font-weight: 500;
   --mainColor: #dddbd5;
 }
 
@@ -47,7 +46,8 @@ body {
 .chat-window {
   display: flex;
   flex-direction: column;
-  min-height: 2rem;
+  justify-content: end;
+  min-height: 12rem;
   padding: 0.5rem;
   padding-bottom: 2rem;
   gap: 1rem;

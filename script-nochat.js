@@ -95,12 +95,8 @@ thinkingSPinner.style.display = "none";
 var minThinking = 200; //milliseconds
 var maxThinking = 3000; //milliseconds
 
-
-
-
 const characterDelay = 25; // characterDelay in milliseconds between each character
 const answerDelay = Math.floor(Math.random() * (maxThinking - minThinking + 1)) + minThinking; // characterDelay in milliseconds between question/answer
-
 
 let divID = 0;
 
