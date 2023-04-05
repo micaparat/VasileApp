@@ -1,22 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
-body {
-  font-family: 'Patrick Hand', sans-serif;
-  font-size: 1.75rem;
-  font-weight: 500;
-  --mainColor: #dddbd5;
-}
-
 .main-container {
+  font-family: 'Patrick Hand', sans-serif;
+  --mainColor: #fff;
   max-width: 630px;
   padding: 5px;
+}
+
+/* Mobile breakpoint */
+@media screen and (max-width: 767px) {
+  /* Adjust font size for .main-container */
+  .main-container {
+    font-size: 1.3rem; /* or whatever size you prefer */
+    font-weight: 500;
+  }
+}
+
+/* Tablet breakpoint */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Adjust font size for .main-container */
+  .main-container {
+    font-size: 1.5rem; /* or whatever size you prefer */
+    font-weight: 500;
+  }
+}
+
+/* Desktop breakpoint */
+@media screen and (min-width: 1024px) {
+  /* Adjust font size for .main-container */
+  .main-container {
+    font-size: 1.75rem;    
+    font-weight: 500;
+  }
 }
 
 .button-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 200px;
+  padding: 1rem;
 }
 
 #submit-button {
@@ -26,10 +48,12 @@ body {
   margin: 1rem auto auto auto;
   border: 0px;
   color: #fff;
+  width: 75%;
   border-radius: 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   background: #e02a25;
   cursor: pointer;
+  font-size: large;
   font-weight: 700;
 }
 
@@ -103,7 +127,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: solid 4px #000;
+  border-radius: 1rem;
+  background-color: #dddbd5;
 }
 
 .characters-wrapper {
@@ -129,14 +154,14 @@ body {
 }
 
 .thinking {
-  max-width: 32px;
+  max-width: 12%;
   position: absolute;
-  top: 27%;
-  left: 33%;
+  top: 28%;
+  left: 35%;
   transform: translate3d(-50%, -50%, 0);
 }
 
 .hourglass {
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
 }
