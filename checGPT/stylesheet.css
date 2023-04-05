@@ -38,7 +38,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 #submit-button {
@@ -51,15 +51,15 @@
   width: 75%;
   border-radius: 1rem;
   padding: 1rem 4rem;
-  background: #e02a25;
+  background: linear-gradient(to right, #b31217, #e52d27);
   cursor: pointer;
   font-size: large;
   font-weight: 700;
 }
 
 #submit-button:disabled {
-  background-color: #cdcdcd;
-  color: dimgrey;
+  background: linear-gradient(to right, #4e4d4d, #868585);
+  color: rgb(63, 63, 63);
   opacity: 1;
 }
 
