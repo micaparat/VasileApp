@@ -8,6 +8,11 @@ body {
   --mainColor: #dddbd5;
 }
 
+.main-container {
+  max-width: 630px;
+  padding: 5px;
+}
+
 .button-wrapper {
   display: flex;
   justify-content: center;
@@ -37,13 +42,6 @@ body {
 
 #submit-button:focus {
   outline: 2px solid #180105;
-}
-
-.input-field-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .chat-window {
@@ -101,10 +99,6 @@ body {
   border-color: var(--mainColor) transparent transparent var(--mainColor);
 }
 
-.main-container {
-  padding: 5px;
-}
-
 .app-wrapper {
   display: flex;
   flex-direction: column;
@@ -137,12 +131,12 @@ body {
 .thinking {
   max-width: 32px;
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 27%;
+  left: 33%;
   transform: translate3d(-50%, -50%, 0);
 }
 
 .hourglass {
-  width: 64px;
-  height: 64px;
+  width: 50px;
+  height: 50px;
 }

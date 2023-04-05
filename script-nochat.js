@@ -92,11 +92,15 @@ let currentStrIndex;
 var thinkingSPinner = document.getElementById("thinking");
 thinkingSPinner.style.display = "none";
 
+var minThinking = 200; //milliseconds
+var maxThinking = 3000; //milliseconds
+
 
 
 
 const characterDelay = 25; // characterDelay in milliseconds between each character
-const answerDelay = Math.floor(Math.random() * 3000); // characterDelay in milliseconds between question/answer
+const answerDelay = Math.floor(Math.random() * (maxThinking - minThinking + 1)) + minThinking; // characterDelay in milliseconds between question/answer
+
 
 let divID = 0;
 
@@ -113,7 +117,7 @@ function resetRenderPrompt() {
         submitButton.disabled = false;
 
       });
-    }, Math.floor(Math.random() * 3000)); // wait for X milliseconds between the two functions
+    }, answerDelay); // wait for X milliseconds between the two functions
   });
 }
 
