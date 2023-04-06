@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 .cgpt-main-container {
   font-family: 'Patrick Hand', sans-serif;
   --mainColor: #fff;
   max-width: 630px;
-  padding: 5px;
-}
+  }
 
 /* Mobile breakpoint */
 @media screen and (max-width: 767px) {
   /* Adjust font size for .main-container */
   .cgpt-main-container {
-    font-size: 1.3rem; /* or whatever size you prefer */
-    font-weight: 500;
+    font-size: 1.2rem; /* or whatever size you prefer */
+    font-weight: 500;    
   }
 }
 
@@ -20,7 +24,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* Adjust font size for .main-container */
   .cgpt-main-container {
-    font-size: 1.5rem; /* or whatever size you prefer */
+    font-size: 1.2rem; /* or whatever size you prefer */
     font-weight: 500;
   }
 }
@@ -29,7 +33,7 @@
 @media screen and (min-width: 1024px) {
   /* Adjust font size for .main-container */
   .cgpt-main-container {
-    font-size: 1.75rem;    
+    font-size: 1.5rem;    
     font-weight: 500;
   }
 }
@@ -38,32 +42,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 
-#submit-button {
+#cgpt-submit-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  margin: 1rem auto auto auto;
   border: 0px;
   color: #fff;
   width: 75%;
   border-radius: 1rem;
-  padding: 1rem 4rem;
+  padding: 1rem 1.25rem;
   background: linear-gradient(to right, #b31217, #e52d27);
   cursor: pointer;
   font-size: large;
   font-weight: 700;
 }
 
-#submit-button:disabled {
+#cgpt-submit-button:disabled {
   background: linear-gradient(to right, #4e4d4d, #868585);
   color: rgb(63, 63, 63);
-  opacity: 1;
+  opacity: .6;
 }
 
-#submit-button:focus {
+#cgpt-submit-button:focus {
   outline: 2px solid #180105;
 }
 
@@ -71,7 +74,7 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  min-height: 12rem;
+  min-height: 250px;
   padding: 0.5rem;
   padding-bottom: 2rem;
   gap: 1rem;

@@ -83,10 +83,8 @@ let promptIndex = Math.floor(Math.random() * randomizedPrompts.length);  // inde
 let answIndex = Math.floor(Math.random() * randomizedAnswers.length); // index of current answer string
 let j = 0; // index of current character in answer string
 let characterIndex = 0;
-let inputField = document.getElementById("input-field");
-let submitButton = document.getElementById("submit-button");
-let chatWindow = document.getElementById("chat-window");
-let fakeGptWindow = document.getElementById("fake-gpt-window");
+let submitButton = document.getElementById("cgpt-submit-button");
+let chatWindow = document.getElementById("cgpt-chat-window");
 let currentStrArray;
 let currentStrIndex;
 var thinkingSPinner = document.getElementById("thinking");
