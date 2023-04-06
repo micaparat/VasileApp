@@ -15,7 +15,7 @@ body {
 @media screen and (max-width: 767px) {
   /* Adjust font size for .main-container */
   .cgpt-main-container {
-    font-size: 1.2rem; /* or whatever size you prefer */
+    font-size: 1.5rem; /* or whatever size you prefer */
     font-weight: 500;    
   }
 }
@@ -24,7 +24,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* Adjust font size for .main-container */
   .cgpt-main-container {
-    font-size: 1.2rem; /* or whatever size you prefer */
+    font-size: 1.5rem; /* or whatever size you prefer */
     font-weight: 500;
   }
 }
