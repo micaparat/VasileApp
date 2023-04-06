@@ -32,7 +32,7 @@ let prompts = [
   "Vin în vizită verişorii mei din Tuvalu. Ce să gătesc ca să-i dau pe spate?",
   "Ce să gătesc mai sănătos? Mi-au ieşit analizele varză",
   "Ce să gătesc să-mi dea energie? Am de crăpat două tone de lemne diseară",
-  "E inflaţie. Ce să gătesc care să fie şi gustos, şi ieftin?",
+  "E criză. Ce să gătesc care să fie şi gustos, şi ieftin?",
   "Fi-miu stă la cămin. Ce să gătesc să-i pun pe autocar la noapte?",
   "Ce să gătesc care să mulţumească şi milenialii, şi generaţia Z?",
   "Am în frigider doar lapte de soia bio şi o banană. Ce aş putea să gătesc?",
