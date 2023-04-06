@@ -1,5 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  22% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 0;
+  }
+  29% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 0;
+  }
+  46% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  69% {
+    opacity: .69; /* nice */
+  }
+  70% {
+    opacity: 0;
+  }
+  78% {
+    opacity: 1;
+  }
+  82% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -140,6 +194,17 @@ body {
 .cgpt-hourglass {
   width: 100%;
   height: 100%;
+}
+
+.cgpt-flashing-poeinis {
+  position: absolute;
+  top: 2px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  animation: blink 2s infinite;
 }
 
 /* Mobile breakpoint */

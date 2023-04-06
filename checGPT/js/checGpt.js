@@ -85,10 +85,13 @@ let j = 0; // index of current character in answer string
 let characterIndex = 0;
 let submitButton = document.getElementById("cgpt-submit-button");
 let chatWindow = document.getElementById("cgpt-chat-window");
+let flashinPoeinis = document.getElementById("cgpt-flashing-poeinis");
 let currentStrArray;
 let currentStrIndex;
 var thinkingSPinner = document.getElementById("thinking");
+
 thinkingSPinner.style.display = "none";
+flashinPoeinis.style.display = "none";
 
 var minThinking = 200; //milliseconds
 var maxThinking = 3000; //milliseconds
@@ -107,9 +110,10 @@ function resetRenderPrompt() {
     thinkingSPinner.style.display = "block";
     setTimeout(() => {
       thinkingSPinner.style.display = "none";
+      flashinPoeinis.style.display = "block";
       typeAnswer(() => {
         submitButton.disabled = false;
-
+        flashinPoeinis.style.display = "none";
       });
     }, answerDelay); // wait for X milliseconds between the two functions
   });
