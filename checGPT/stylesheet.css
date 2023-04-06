@@ -11,33 +11,6 @@ body {
   max-width: 630px;
   }
 
-/* Mobile breakpoint */
-@media screen and (max-width: 767px) {
-  /* Adjust font size for .main-container */
-  .cgpt-main-container {
-    font-size: 1.5rem; /* or whatever size you prefer */
-    font-weight: 500;    
-  }
-}
-
-/* Tablet breakpoint */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Adjust font size for .main-container */
-  .cgpt-main-container {
-    font-size: 1.5rem; /* or whatever size you prefer */
-    font-weight: 500;
-  }
-}
-
-/* Desktop breakpoint */
-@media screen and (min-width: 1024px) {
-  /* Adjust font size for .main-container */
-  .cgpt-main-container {
-    font-size: 1.5rem;    
-    font-weight: 500;
-  }
-}
-
 .cgpt-button-wrapper {
   display: flex;
   justify-content: center;
@@ -76,7 +49,7 @@ body {
   justify-content: end;
   min-height: 250px;
   padding: 0.5rem;
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
   gap: 1rem;
 }
 
@@ -167,4 +140,56 @@ body {
 .cgpt-hourglass {
   width: 100%;
   height: 100%;
+}
+
+/* Mobile breakpoint */
+@media screen and (max-width: 600px) {
+  /* Adjust font size for .main-container */
+  .cgpt-main-container {
+    font-size: 1.125rem; /* or whatever size you prefer */
+    font-weight: 400;    
+  }
+
+  .cgpt-chat-bubble {
+    width: 80%;
+    padding: .5rem .5rem;
+  }
+
+  .cgpt-chat-window {
+    min-height: 185px;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  .cgpt-button-wrapper {
+    padding: 0.5rem;
+  }
+  
+
+  #cgpt-submit-button {
+    width: 75%;
+    border-radius: 1rem;
+    padding: 0.8rem 1.25rem;
+    font-size: medium;
+    font-weight: 600;
+  }
+}
+
+/* Tablet breakpoint */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  /* Adjust font size for .main-container */
+  .cgpt-main-container {
+    font-size: 1.5rem; /* or whatever size you prefer */
+    font-weight: 500;
+  }
+}
+
+/* Desktop breakpoint */
+@media screen and (min-width: 1024px) {
+  /* Adjust font size for .main-container */
+  .cgpt-main-container {
+    font-size: 1.5rem;    
+    font-weight: 500;
+  }
 }
