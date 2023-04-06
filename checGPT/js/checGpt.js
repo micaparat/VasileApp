@@ -119,7 +119,7 @@ function resetRenderPrompt() {
 
 function typeQuestion(callback) {
   const chatBubbleLeft = document.createElement("div");
-  chatBubbleLeft.setAttribute("class", "chat-bubble left tri-right btm-left");
+  chatBubbleLeft.setAttribute("class", "cgpt-chat-bubble cgpt-left cgpt-tri-right cgpt-btm-left");
   chatWindow.appendChild(chatBubbleLeft);
 
   typeWriter(randomizedPrompts, promptIndex, chatBubbleLeft, callback);
@@ -133,7 +133,7 @@ function typeQuestion(callback) {
 
 function typeAnswer(callback) {
   const chatBubbleRight = document.createElement("div");
-  chatBubbleRight.setAttribute("class", "chat-bubble right tri-right btm-right");
+  chatBubbleRight.setAttribute("class", "cgpt-chat-bubble cgpt-right cgpt-tri-right cgpt-btm-right");
   chatWindow.appendChild(chatBubbleRight);
 
   typeWriter(randomizedAnswers, answIndex, chatBubbleRight, callback);
