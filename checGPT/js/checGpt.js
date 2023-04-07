@@ -153,7 +153,7 @@ let answers = [
   "De ce să găteşti cînd poţi porni un război pe internet între ăia care spun piure şi ăia care spun pireu",
   "Înfige un steguleţ al Japoniei în mămăligă, să fie fusion",
   "Mămăligă cu ciocolFATAL EXCEPTION 0EPZ4873 MODULE Retete_woke NOT FOUND",
-  "Oţet în foitaj"
+  "Oţet în foitaj",
   "Gastronomie moleculară? Pfft. Acum e la modă aia unicelulară. Numa' zic, au băgat fleică de amibă la Knaufland",
   "Prăjitură cu vişine din vişinată. Nu? OK, atunci cu pufoaică din ţuică",
   "Terci nemţesc, cu un design foarte plictisitor şi care te păcăleşte la noxe, din crupe de porumb. Volkswagen Păsat"
