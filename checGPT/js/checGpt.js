@@ -42,7 +42,14 @@ let prompts = [
   "Cîntă Scorpions la Zilele Oraşului şi m-am oferit să-i cazez peste noapte. Ce să le gătesc?",
   "Azi sărbătorim că a intrat copilul la Medicină. Ce să gătesc?",
   "Mi-a rămas o coadă de miel de la Paşti. Ce pot să gătesc cu ea?",
-  "A zis la RTV că neomarxiştii vor să interzică mîncarea. Ce să gătesc şi eu repede?"
+  "A zis la RTV că neomarxiştii vor să interzică mîncarea. Ce să gătesc şi eu repede?",
+  "Ce să gătesc pentru parastasul de 500 de ani al domnului Ţării Româneşti, Radu de la Afumaţi?",
+  "Ce să gătesc pentru nunta de aur a bunicilor?",
+  "Am o invitaţie dublă la film. Ce să gătesc ca să nu mai dau bani aiurea pe popcorn?",
+  "Se inaugurează noul Cămin Cultural. Ce să gătesc să nu zică primarul că am venit cu mîna în cur?",
+  "Ce să gătesc şi eu mai afrodisiac pentru tradiţionala orgie cîmpenească de Sf. Ilie?",
+  "A închis ANPC toate restaurantele din oraş. Ce să gătesc?",
+  "Ce să gătesc care să-mi aducă aminte de copilărie?"
   
 
 
@@ -136,7 +143,20 @@ let answers = [
   "Fupuleţi. Ca pufuleţii, dar invers",
   "Tătăligă. Masculul mămăligii",
   "Ceafă de borg. Merge cu nişte klingogonele",
-  "Algoritmul de recunoaştere facială îmi spune că eşti un cal. Îţi recomand ovăz"
+  "Algoritmul de recunoaştere facială îmi spune că eşti un cal. Îţi recomand ovăz",
+  "Fă un aluat foarte dramatic. Pîine cu maia Morgenstern",
+  "Cel mai mare bulz din lume. Bulz Khalifa",
+  "Souvlaki saganaki malaka parakalo ela ela!",
+  "Cine face azi salată de oeuf, mîine face salată de boeuf",
+  "Cea mai bogată salată din lume. Boeuf Bezos",
+  "Ulei pane",
+  "De ce să găteşti cînd poţi porni un război pe internet între ăia care spun piure şi ăia care spun pireu",
+  "Înfige un steguleţ al Japoniei în mămăligă, să fie fusion",
+  "Mămăligă cu ciocolFATAL EXCEPTION 0EPZ4873 MODULE Retete_woke NOT FOUND",
+  "Oţet în foitaj"
+  "Gastronomie moleculară? Pfft. Acum e la modă aia unicelulară. Numa' zic, au băgat fleică de amibă la Knaufland",
+  "Prăjitură cu vişine din vişinată. Nu? OK, atunci cu pufoaică din ţuică",
+  "Terci nemţesc, cu un design foarte plictisitor şi care te păcăleşte la noxe, din crupe de porumb. Volkswagen Păsat"
   
 
 
