@@ -1,8 +1,8 @@
 let prompts = [
 
   "Ce să gătesc azi? Vine barbată-miu din delegaţie şi vreau să-l surprind",
-  "Ce sa gătesc azi la ăia micii?",
-  "Am tot facut ciorbă de leuştean, nu ştiu ce să gătesc azi",
+  "Ce să le gătesc azi la ăia micii?",
+  "Am tot făcut ciorbă de leuştean, nu ştiu ce să gătesc azi",
   "Ce să mai gătesc azi?",
   "Dar dacă ne invadează ruşii, eu ce le pun pe masă?",
   "Repede, zi-mi ce să gătesc azi, vin socrii din Dragomireşti şi Costel e alergic la sare şi apă",
